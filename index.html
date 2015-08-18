@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title class="tdr">Tradução com JavaScript</title>
+        <style>
+            body, p, a {
+                color: #555;
+                font-family: Tahoma;
+                font-size: 14px;
+                text-align: center
+            }
+            a {
+                color:#4881E6;
+                text-decoration: none
+            }
+            a:hover {
+                color:#5548E6;
+                text-decoration: underline
+            }
+            select {
+                margin:100px 0 50px;
+                padding:5px 10px
+            }            
+        </style>
+    </head>
+    <body>
+        <select onchange="idioma(this)">
+            <option value="pt-br" selected="selected">Português (Brasil)</option>
+            <option value="en-us">English (US)</option>
+            <option value="fr">Français</option>
+        </select>
+        <div class="tdr">Olá, Mundo</div>
+        <p class="tdr">Tradução apenas com JavaScript sem o uso de jQuery e outros Frameworks</p>
+        <p class="tdr">Ficou interessado?</p>
+        <a href="https://github.com/williankeller/Traducao-JavaScript" class="tdr">Mais detalhes</a>
+        <script src="src/traducao.min.js"></script>
+        <script>
+            function idioma(sel) {
+                switch (sel.value) {
+                    case "pt-br":
+                        conteudo = {
+                            "Tradução com JavaScript": "Tradução com JavaScript", 
+                            "Olá, Mundo": "Olá, Mundo", 
+                            "Mais detalhes": "Mais detalhes", 
+                            "Ficou interessado?": "Ficou interessado?",
+                            "Tradução apenas com % sem o uso de % e outros %": "Tradução apenas com % sem o uso de % e outros %"
+                        };
+                        break;
+                    case "en-us":
+                        conteudo = {
+                            "Tradução com JavaScript": "Translation with JavaScript", 
+                            "Olá, Mundo": "Hello, World", 
+                            "Mais detalhes": "More details", 
+                            "Ficou interessado?": "Became interested?",
+                            "Tradução apenas com % sem o uso de % e outros %": "Translate with only % without use % and another %"
+                        };
+                        break;
+                    case "fr":
+                        conteudo = {
+                            "Tradução com JavaScript": "Traduction avec JavaScript", 
+                            "Olá, Mundo": "Bonjour Le Monde", 
+                            "Mais detalhes": "Plus de détails", 
+                            "Ficou interessado?": "Se sont intéressés?",
+                            "Tradução apenas com % sem o uso de % e outros %": "Traduction uniquement avec % et sans utiliser % d'autres %"
+                        };
+                        break;
+                }
+                Tradutor(conteudo);
+            }
+        </script>
+    </body>
+</html>
