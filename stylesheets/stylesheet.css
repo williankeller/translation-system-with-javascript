@@ -243,3 +243,24 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+    
+  section.main-content h3 {
+    float: left;
+}
+section.main-content select {
+    float: right;
+    padding: 3px 12px;
+    font-size: 14px;
+}
+.area-total {
+    position: relative;
+    display: block;
+    margin: 150px 0 200px;
+    text-align: center;
+}
+.area-total div {
+    font-size: 24px;
+}
+.site-footer {
+    text-align: center;
+}
