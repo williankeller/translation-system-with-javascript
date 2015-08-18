@@ -283,7 +283,6 @@ Tradutor = function (array) {
          * Retorna a palavra, utilizando os limites localizados para extraí-la a partir da chave.
          */
         return conteudo.slice(inicio, final + posicao);
-
     };
 
     /*
