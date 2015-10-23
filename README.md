@@ -1,4 +1,4 @@
-# Tradução com JavaScript
+# Tradução com JavaScript ![Versão](https://img.shields.io/badge/Versão-1.0.4-green.svg)
 
 #### Tradução de conteúdo em linha usando apenas JavaScript (sem jQuery)
 
